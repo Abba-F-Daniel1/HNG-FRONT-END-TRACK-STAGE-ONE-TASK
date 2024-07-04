@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abba Daniel - HNG Frontend Intern</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header id="about">
+      <div class="container">
+        <div class="profile-info">
+          <img
+            src="https://ca.slack-edge.com/T05FFAA91JP-U05RMPCGMSM-d88e1d9e23d5-512"
+            alt="Abba Daniel"
+            class="profile-pic"
+            data-testid="slackProfilePicture"
+          />
+          <div class="profile-details">
+            <h1 data-testid="slackDisplayName"></h1>
+            <p data-testid="slackEmail"></p>
+            <div class="time-info">
+              <p>
+                <strong>UTC Time:</strong>
+                <span data-testid="currentTimeUTC" id="utcTime"></span>
+              </p>
+              <p>
+                <strong>Current Day:</strong>
+                <span data-testid="currentDay" id="currentDay"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="goals" class="section">
+        <h2>My Tech Goals for the Next 2 Years</h2>
+        <ul>
+          <li>Master full-stack web development with React and Node.js</li>
+          <li>
+            Develop expertise in cloud computing (AWS) and serverless
+            architectures
+          </li>
+          <li>
+            Contribute to major open-source projects and build a strong GitHub
+            portfolio
+          </li>
+          <li>
+            Enhance skills in data structures, algorithms, and system design
+          </li>
+          <li>
+            Learn and apply machine learning and AI concepts to real-world
+            problems
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Next.js</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">MongoDB</span>
+          <span class="skill">Firebase</span>
+          <span class="skill">Git</span>
+          <span class="skill">RESTful APIs</span>
+          <span class="skill">Agile Methodologies</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>E-commerce Platform</h3>
+            <p>A full-stack online store using React, Node.js, and MongoDB</p>
+          </div>
+          <div class="project">
+            <h3>Task Management App</h3>
+            <p>A React Native mobile app for productivity enhancement</p>
+          </div>
+          <div class="project">
+            <h3>Data Visualization Dashboard</h3>
+            <p>An interactive dashboard using Recharts.js, React-Admin open-source, Shadcn/UI, Typescript and Next.js</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="links">
+          <a
+            href="https://hng.tech/learn"
+            data-testid="hngLink"
+            target="_blank"
+          >
+            <i class="fas fa-graduation-cap"></i> HNG Learn
+          </a>
+          <a
+            href="https://keyword.dog"
+            data-testid="keywordLink"
+            target="_blank"
+          >
+            <i class="fas fa-search"></i> Keyword Dog
+          </a>
+          <a
+            href="https://scrapeanyweb.site"
+            data-testid="scrapeanywebLink"
+            target="_blank"
+          >
+            <i class="fas fa-spider"></i> Scrape Any Web
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Abba Daniel. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.github.com/Abba-F-Daniel1" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abbafrederickdaniel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/FrederickAbba" target="_blank"><svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+        </svg></i></a>
+          <a href="https://www.instagram.com/abba_f_daniel" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
